@@ -4,8 +4,28 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Cricket Height</title>
+      <style>
+            .field{
+                  border: 2px solid black;
+                  display: flex;
+            }
+            .field:hover .bat{
+                  
+                  transform: rotate(60deg);
+                  transform-origin: top left;
+            }
+            .bat{
+                  width: 200px;
+                  height: 200px;
+                  justify-content: center;
+                  align-items: center;
+                  border: 1px solid red;
+            }
+      </style>
 </head>
 <body>
-      
+      <div class="field">
+            <img class="bat" src="cricket-bat.jfif" alt="">
+      </div>
 </body>
 </html>
