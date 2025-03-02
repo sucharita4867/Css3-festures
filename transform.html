@@ -10,20 +10,42 @@
                   height: 200px;
             }
             .container{
-                  border: 2px solid blue;
-                  background-color: rgba(210, 105, 30, 0.74);
+                  border: 2px solid rgba(10, 10, 10, 0.979);
+                  background-color: aqua;
             }
             .inner{
-                  border: 2px solid red;
-                  background-color: rgba(20, 220, 120, 0.842);
-                  /* transform: scale(0.38, 0.19); */
-                  /* transform: rotate(-45deg); */
-                  transform: scale(0.40) rotate(-180deg);
+                  border: 2px solid blue;
+                  background-color: rgba(49, 25, 182, 0.432);
+                  /* transform: scale(0.25,0.25);
+                  transform: rotate(45deg);
+                  transform: translateX(100px);
+                  transform: translateY(100px); */
+                  /* transform: scale(0.5)
+                  translateX(100px)
+                  rotate(45deg)
+                  Translate(100px); */
+            }
+            .inner:hover{
+                  transform: scale(0.6)
+                  translate(50px)
+                  rotate(45deg);
+            }
+            .sit{
+                  width: 200px;
+                  border: 1px solid black;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  /* text-overflow: clip; */
             }
       </style>
 </head>
 <body>
+      
       <h2>Explore Transform and Translate</h2>
+      <p title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." class="sit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
       <!-- .container*3{container $}>.inner{Inner $} -->
       <div class="container">container 1
             <div class="inner">Inner 1</div>
