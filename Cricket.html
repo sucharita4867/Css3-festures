@@ -8,24 +8,30 @@
             .field{
                   border: 2px solid black;
                   display: flex;
+                  justify-content: center;
+                  align-items: center;
             }
             .field:hover .bat{
-                  
                   transform: rotate(60deg);
                   transform-origin: top left;
             }
             .bat{
                   width: 200px;
                   height: 200px;
-                  justify-content: center;
-                  align-items: center;
-                  border: 1px solid red;
+                  /* border: 1px solid red; */
+            }
+            .ball{
+                  height: 50px;
+                  width: 50px;
+                  background-color: red;
+                  border-radius: 50%;
             }
       </style>
 </head>
 <body>
       <div class="field">
             <img class="bat" src="cricket-bat.jfif" alt="">
+            <div class="ball"></div>
       </div>
 </body>
 </html>
