@@ -4,13 +4,50 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Css Variable</title>
+      <style>
+            :root{
+                  --primary-color: green;
+                  --secondary-color: purple;
+                  --font-size: 20px;
+            }
+            h1{
+                  color: var(--secondary-color);
+            }
+            h5{
+                  background-color: var(--primary-color)
+            }
+            .box{
+                  border: 2px solid var(--secondary-color);
+                  width: calc(100% - 200px);
+            }
+            .box p{
+                  color: var(--primary-color);
+                  font-size: var(--font-size);
+            }
+            .sidebar{
+                  background-color: lightblue;
+            }
+            .content{
+                  background-color: lightsalmon;
+            }
+            .container{
+                  display: grid;
+                  gap: 20px;
+                  grid-template-rows: 300px;
+                  grid-template-columns: 300px calc(100% - 300px - 20px);
+            }
+      </style>
 </head>
 <body>
       <h1>My custom properties</h1>
-      <h5>also commonly known as css variables</h5>
+      <h5>Also commonly known as css variables</h5>
       <div class="box">
-            <h3>i am doing something</h3>
+            <h3>I am doing something</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, perspiciatis ipsam labore odio eveniet dolorem velit obcaecati! Sed nobis modi aut inventore culpa omnis doloremque optio? Veritatis cum doloribus quo.</p>
+      </div>
+      <div class="container">
+            <div class="sidebar">sidebar</div>
+            <div class="content">main content</div>
       </div>
 </body>
 </html>
