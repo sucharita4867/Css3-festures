@@ -4,8 +4,36 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Animation File</title>
+      <style>
+            @keyframes tip-top {
+                  from{
+                        left: 0;
+                  }
+                  to{
+                        left: 450px;
+                        background-color: red;
+                  }
+            }
+            .stage{
+                  width: 500px;
+                  height: 300px;
+                  background-color: aqua;
+                  border: 2px solid black;
+            }
+            .ball{
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  background-color: yellow;
+                  position: relative;
+                  animation: tip-top 2s ease-in-out 1s infinite alternate ;
+            }
+      </style>
 </head>
 <body>
       <h2>Explore Animation</h2>
+      <div class="stage">
+            <div class="ball"></div>
+      </div>
 </body>
 </html>
