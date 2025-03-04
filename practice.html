@@ -69,6 +69,41 @@
                   background-color: yellow;
             }
             /* animation section style */
+            .stage{
+                  border: 2px solid black;
+                  background-color: burlywood;
+                  width: 900px;
+                  height: 300px;
+                  margin-left: 20%;
+            }
+            .ball{
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  border: 1px solid black;
+                  background-color: red;
+                  position: relative;
+                  animation: tip-top 3s ease-in-out  2s infinite alternate;
+            }
+            @keyframes tip-top {
+                  0%{
+                        left: 0px;
+                        top: 0px;
+                  }
+                  25%{
+                        top: 250px;
+                        left: 150px;
+                  }
+                  50%{
+
+                  }
+                  75%{
+
+                  }
+                  100%{
+
+                  }
+            }
        </style>
 </head>
 <body>
@@ -103,7 +138,10 @@
             <div class="container">Box-4</div>
       </section>
       <section class="animathion">
-            
+            <h1>animation section practice</h1>
+            <div class="stage">
+                  <div class="ball"></div>
+            </div>
       </section>
 </body>
 </html>
