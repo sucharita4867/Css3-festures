@@ -52,6 +52,23 @@
             .inner:hover{
                   transform: scale(0.9) translate(50px) rotate(45deg);
             }
+            /* transition section style */
+            .container{
+                  width: 100px;
+                  height: 100px;
+                  border: 2px solid purple;
+                  margin-left: 50px;
+                  margin-bottom: 20px;
+                  background-color: red;
+                  /* property name \ duration \ easing function \ delay */
+                  transition: width 4s ease-in 2s, background-color 3s ease-in 2s;
+                 
+            }
+            .container:hover{
+                  width: 500px;
+                  background-color: yellow;
+                  /* padding: 50px; */
+            }
        </style>
 </head>
 <body>
